@@ -19,7 +19,7 @@
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
-        "predeploy": "yarn build",
+        "predeploy": "yarn build --prefix-paths",
         "deploy": "gh-pages -d public",
         "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
         "test": "echo \"Error: no test specified\" && exit 1"
