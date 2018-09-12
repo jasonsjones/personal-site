@@ -15,7 +15,6 @@
     "keywords": ["gatsby"],
     "license": "MIT",
     "main": "n/a",
-    "homepage": "https://jasonsjones.github.io/blog",
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
