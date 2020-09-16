@@ -1,17 +1,17 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Link from "gatsby-link";
-import "./index.css";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Link from 'gatsby-link';
+import './index.css';
 
 const IndexPage = ({ data }) => {
     console.log(data);
     return (
         <div>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-                <div key={node.id} className="article-box">
+            {data.allMarkdownRemark.edges.map(({ node }, idx) => (
+                <div key={idx} className="article-box">
                     <Link
                         to={node.fields.slug}
-                        style={{ textDecoration: "none", color: "inherit" }}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
                     >
                         <h3 className="title">{node.frontmatter.title}</h3>
                     </Link>
